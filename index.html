@@ -75,5 +75,18 @@
             </div>
         <br><br>
 		</section>
+
+
+                                <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+                                <script>window.addEventListener('load', function() {
+    FormConsentSDK.initialize({
+        codeGenMetadata:{"formPropertyId":"11","formSelector":"[id*=\"contactForm\"]","subjectIdentifiers":[{"name":"firstName","selector":"[id = \"firstName\"]","isPrimary":false},{"name":"lastName","selector":"[id = \"lastName\"]","isPrimary":false},{"name":"mobile","selector":"[id = \"mobile\"]","isPrimary":true},{"name":"email","selector":"[id = \"email\"]","isPrimary":false},{"name":"model","selector":"[id = \"model\"]","isPrimary":false},{"name":"location","selector":"[id = \"location\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"marketing_communications","selector":"[name = \"marketing_communications\"]","propertyId":55790,"consentValue":"checked"},{"type":"checkbox","name":"consent","selector":"[name = \"consent\"]","propertyId":55791,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":"[data-sitekey = \"6LdhIMQqAAAAAMnpde9vzM1BbNOINED7cGQSbVN0\"]"}},
+        url: 'https://app.securiti.ai/privaci/v1/',
+        authToken:'2ce7eeda-b636-4dc2-b3fb-8a19aa46339f',
+        orgId:'1',
+        onConsentSuccess: null,
+        onConsentFailure: null
+    })
+})</script>
 	
 </body>
