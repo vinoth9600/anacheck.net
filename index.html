@@ -4,39 +4,168 @@
 </head>
 	
 <body>	
+	<div class="bg-image">
+		<div class="overlay"></div>
+		<div class="logo">
+			<img src="images/logo.png" alt="Omoda JaeCoo Logo">
+		</div>
+		<div class="coming-soon-container">
+			<div class="content">
+				<div class="comingsoon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="863.159" height="139" viewBox="0 0 863.159 139">
+						<g id="Group_8" data-name="Group 8" transform="translate(-474 -320.316)">
+							<g id="Group_7" data-name="Group 7" transform="translate(474 418.123)">
+								<rect id="Rectangle_23" data-name="Rectangle 23" width="19.805" height="854.176"
+									transform="translate(863.159) rotate(90)" fill="#dc000c" />
+								<rect id="Rectangle_25" data-name="Rectangle 25" width="19.805" height="3.887"
+									transform="translate(3.887) rotate(90)" fill="#dc000c" />
+							</g>
+							<text id="COMING_SOON" data-name="COMING SOON" transform="translate(479.159 431.316)"
+								fill="#fff" font-size="118" font-family="Raleway-ExtraBold, Raleway" font-weight="800">
+								<tspan x="0" y="0">COMING SOON</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="promo-highlights container my-5 text-white text-center">
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-wrench fa-2x mb-2"></i>
+                        <p style="width: 70%; margin: 0 auto;">Free service contract up to 4 years / 80,000 km</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-car-alt fa-2x mb-2"></i>
+                        <p>Free Insurance</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="far fa-window-maximize fa-2x mb-2"></i>
+                        <p>FREE Tinting</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-shield-alt fa-2x mb-2"></i>
+                        <p style="width: 80%; margin: 0 auto;">Free extended warranty for 10 years or 1 million km</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-truck-moving fa-2x mb-2"></i>
+                        <p style="width: 80%; margin: 0 auto;">FREE 7 years Roadside Assistance</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-file-signature fa-2x mb-2"></i>
+                        <p>FREE Registration</p>
+                    </div>
+                </div>
+                <p class="info-text"><br><br>
+					Have questions? We’re here to support you every step of the way! Shoot us an email at <a href="mailto:omoda.jaecoo@galadaribrothers.com">omoda.jaecoo@galadaribrothers.com</a>, <br> or fill out the form below. Let’s embark on this exciting journey together!
+				</p>
+            </div>
+            
+		<section class="stripe">
+			<div class="container">
+				<form class="my-form" id="contactForm">
+					<div class="container">
+						<ul>
+							<li>
+								<div class="grid grid-2">
+									<input type="text" id="firstName" placeholder="First Name" autocomplete="off" required>
+									<input type="text" id="lastName" placeholder="Last Name" autocomplete="off" required>
+								</div>
+							</li>
+							<li>
+								<div class="grid grid-2">
+									<input type="tel" id="mobile" placeholder="Mobile" autocomplete="off" required>
+									<input type="email" id="email" placeholder="Email" autocomplete="off" required>
+								</div>
+							</li>
+							<li>
+								<div class="grid grid-2">
+									<div class="select-wrapper">
+										<select class="form-control" id="model" autocomplete="off" required>
+											<option value="" selected>Select Model</option>
+											<option value="OMODA C5">OMODA C5</option>
+											<option value="JAECOO J7">JAECOO J7</option>
+											<option value="JAECOO J8">JAECOO J8</option>
+										</select>
+									</div>
+									<div class="select-wrapper">
+										<select class="form-control" id="location" autocomplete="off" required>
+											<option value="" selected>Select Location</option>
+											<option value="Sharjah">Sharjah</option>
+											<option value="Ajman">Ajman</option>
+											<option value="Fujairah">Fujairah</option>
+											<option value="Ras Al Khaimah">Ras Al Khaimah</option>
+											<option value="Umm al-Quwain">Umm al-Quwain</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<textarea id="message" placeholder="Message" autocomplete="off"></textarea>
+							</li>
+						</ul>
+						<div class="checkbox-container">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="marketing_communications">
+                            <span class="checkmark"></span>
+                            I would like to receive marketing communications on products, services or events.
+                          </label>
+                        
+                          <label class="custom-checkbox mobile">
+                            <input type="checkbox" name="consent" required>
+                            <span class="checkmark"></span>
+                            I provide consent to Galadari Mobility to process my personal data in line with the &nbsp; 
+                            <a href="https://omodajaecoogaladari.com/privacy_en.html" target="_blank" style="color:#fff;">Privacy Notice</a>. <span class="required">*</span>
+                          </label>
+                        </div>
 
 
-                                <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
-                                <script>window.addEventListener('load', function() {
-    FormConsentSDK.initialize({
-        codeGenMetadata:{"formPropertyId":"10","formSelector":"[id*=\"iframeIntegrationExampleForm\"]","subjectIdentifiers":[{"name":"polis","selector":"[name = \"firstName\"]","isPrimary":true},{"name":"Last Name","selector":"[name = \"lastName\"]","isPrimary":false},{"name":"Email","selector":"[name = \"email\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"IT","selector":"[name = \"IT\"]","propertyId":50959,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"[id = \"cmp__prefcenter_submit_btn\"]"}},
-        url: 'https://app.securiti.ai/privaci/v1/',
-        authToken:'2ce7eeda-b636-4dc2-b3fb-8a19aa46339f',
-        orgId:'1',
-        onConsentSuccess: null,
-        onConsentFailure: null
-    })
-})</script>
+						<div class="text-left">
+							<button class="g-recaptcha btn-grid" 
+									data-sitekey="6LdhIMQqAAAAAMnpde9vzM1BbNOINED7cGQSbVN0" 
+									data-callback='onSubmit' 
+									data-action='submit'>Submit</button>
+						</div>
+					</div>
+				</form>
+            </div>
+        <br><br>
+		</section>
+            <footer class="social-icons-container">
+            	<div class="container text-center">
+            	    <a href="https://maps.app.goo.gl/Rw1onXpWt2124zXN9?g_st=iw" target="_blank" class="map-link"> <i class="fas fa-map-marker-alt map-icon"><br></i></a><p style="margin: 0px 0 0;">Find Us Here</p><br>
+            	    <img class="partofgaladari" src="images/broughttoyoubygaladari.png" alt="Omoda JaeCoo Logo">
+            	    <br><br>
+            		<p>Follow Us:</p>
+            		<div class="social-links">
+            		    <a href="mailto:omoda.jaecoo@galadaribrothers.com" aria-label="Email">
+            				<i class="fas fa-envelope"></i>
+            			</a>
+            			<a href="https://www.instagram.com/omodajaecoo.galadari/" target="_blank" aria-label="Instagram">
+            				<i class="fab fa-instagram"></i>
+            			</a>
+            			<a href="https://www.facebook.com/share/1AyBXXg5GD/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            				<i class="fab fa-facebook"></i>
+            			</a>
+            			<a href="https://www.tiktok.com/@omodajaecoo.galadari?_t=ZS-8tRR2w17NbU&_r=1" target="_blank" aria-label="TikTok">
+            				<i class="fab fa-tiktok"></i>
+            			</a>
+            			<a href="https://www.linkedin.com/company/omoda-jaecoo-uae-by-galadari/" target="_blank" aria-label="LinkedIn">
+            				<i class="fab fa-linkedin"></i>
+            			</a>
+            		</div>
+            	</div>
+            </footer>
+        <br><br><br>
+	</div>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdhIMQqAAAAAMnpde9vzM1BbNOINED7cGQSbVN0"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/sweetalert2@11.js"></script>
+	<script src="js/mail.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 	
-    <section>
-        <form id="iframeIntegrationExampleForm">
-            <div class="form-group">
-                <label for="firstName">polis</label>
-                <input name="firstName" id="firstName" placeholder="Enter FirstName" />
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input name="lastName" id="lastName" placeholder="Enter LastName" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="Enter email" />
-            </div>
-	    <div class="form-group">
-                <label for="email">IT</label>
-                <input type="checkbox" name="IT" id="IT" placeholder="Select" />
-            </div>
-	<button id="cmp__prefcenter_submit_btn" type="submit" class="cmp-form-submit-button">Submit</button>
-    </section>
+
 
 </body>
