@@ -1,92 +1,11 @@
-<head>
 
-<h1> UC Check </h1>
-</head>
-	
-<body>
-
-<section class="stripe">
-			<div class="container">
-				<form class="my-form" id="contactForm">
-					<div class="container">
-						<ul>
-							<li>
-								<div class="grid grid-2">
-									<input type="text" id="firstName" placeholder="First Name" autocomplete="off" required>
-									<input type="text" id="lastName" placeholder="Last Name" autocomplete="off" required>
-								</div>
-							</li>
-							<li>
-								<div class="grid grid-2">
-									<input type="tel" id="mobile" placeholder="Mobile" autocomplete="off" required>
-									<input type="email" id="email" placeholder="Email" autocomplete="off" required>
-								</div>
-							</li>
-							<li>
-								<div class="grid grid-2">
-									<div class="select-wrapper">
-										<select class="form-control" id="model" autocomplete="off" required>
-											<option value="" selected>Select Model</option>
-											<option value="OMODA C5">OMODA C5</option>
-											<option value="JAECOO J7">JAECOO J7</option>
-											<option value="JAECOO J8">JAECOO J8</option>
-										</select>
-									</div>
-									<div class="select-wrapper">
-										<select class="form-control" id="location" autocomplete="off" required>
-											<option value="" selected>Select Location</option>
-											<option value="Sharjah">Sharjah</option>
-											<option value="Ajman">Ajman</option>
-											<option value="Fujairah">Fujairah</option>
-											<option value="Ras Al Khaimah">Ras Al Khaimah</option>
-											<option value="Umm al-Quwain">Umm al-Quwain</option>
-										</select>
-									</div>
-								</div>
-							</li>
-							<li>
-								<textarea id="message" placeholder="Message" autocomplete="off"></textarea>
-							</li>
-						</ul>
-						<div class="checkbox-container">
-                          <label class="custom-checkbox">
-                            <input type="checkbox" name="marketing_communications">
-                            <span class="checkmark"></span>
-                            I would like to receive marketing communications on products, services or events.
-                          </label>
-                        
-                          <label class="custom-checkbox mobile">
-                            <input type="checkbox" name="consent" required>
-                            <span class="checkmark"></span>
-                            I provide consent to Galadari Mobility to process my personal data in line with the &nbsp; 
-                            <a href="https://omodajaecoogaladari.com/privacy_en.html" target="_blank" style="color:#fff;">Privacy Notice</a>. <span class="required">*</span>
-                          </label>
-                        </div>
-
-
-			<div class="text-left">
-							<button class="g-recaptcha btn-grid" id="submit"
-									data-sitekey="6LdhIMQqAAAAAMnpde9vzM1BbNOINED7cGQSbVN0" 
-									data-callback='onSubmit' 
-									data-action='submit'>Submit</button>
-						</div>
-					</div>
-				</form>
-            </div>
-        <br><br>
-		</section>
-
-
-                                <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
-                                <script>window.addEventListener('load', function() {
-    FormConsentSDK.initialize({
-        codeGenMetadata:{"formPropertyId":"11","formSelector":"[id*=\"contactForm\"]","subjectIdentifiers":[{"name":"firstName","selector":"[id = \"firstName\"]","isPrimary":false},{"name":"lastName","selector":"[id = \"lastName\"]","isPrimary":false},{"name":"mobile","selector":"[id = \"mobile\"]","isPrimary":true},{"name":"email","selector":"[id = \"email\"]","isPrimary":false},{"name":"model","selector":"[id = \"model\"]","isPrimary":false},{"name":"location","selector":"[id = \"location\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"marketing_communications","selector":"[name = \"marketing_communications\"]","propertyId":55790,"consentValue":"checked"},{"type":"checkbox","name":"consent","selector":"[name = \"consent\"]","propertyId":55791,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":"[data-sitekey = \"6LdhIMQqAAAAAMnpde9vzM1BbNOINED7cGQSbVN0\"]"}},
-        url: 'https://app.securiti.ai/privaci/v1/',
-        authToken:'2ce7eeda-b636-4dc2-b3fb-8a19aa46339f',
-        orgId:'1',
-        onConsentSuccess: null,
-        onConsentFailure: null
-    })
-})</script>
-	
-</body>
+<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+<script
+	defer
+	data-strict-csp
+	data-skip-css="false"
+	src="https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader-strict-csp.js"
+	data-tenant-uuid="fc7a1c8b-281a-461f-8245-d27a7164f69b"
+	data-domain-uuid="0cb11ba8-c420-40a0-acf3-4d9d72bd4fec"
+	data-backend-url="https://app.securiti.ai">
+</script>
